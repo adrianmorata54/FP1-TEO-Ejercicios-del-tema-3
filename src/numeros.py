@@ -41,12 +41,10 @@ def clasifica_rango(n: int) -> str:
 
 def busca_perfecto(n:int) -> str:
     contador = n
-    numero = 1
-    resultado = ''
+    numero = 0
     while contador != 0:
-        if clasifica_numero(numero) == 'Perfecto':
-            resultado += str(numero) + ' '
-            contador -= 1
         numero +=1
-    return resultado
+        if clasifica_numero(numero) == 'Perfecto':
+            contador -= 1
+    return numero
 

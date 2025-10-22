@@ -40,9 +40,9 @@ def test_busca_perfecto():
     assert resultado == 8128
 
     # Descomenta estas líneas si quieres probar con un número mayor (ten en cuenta que puede tardar...)
-    #tiempo, resultado = cronometra_llamada(busca_perfecto, 5)
-    #print(f"Tiempo ejecución de busca_perfecto(5): {tiempo:.6f} segundos")
-    #assert resultado == 33550336
+    tiempo, resultado = cronometra_llamada(busca_perfecto, 5)
+    print(f"Tiempo ejecución de busca_perfecto(5): {tiempo:.6f} segundos")
+    assert resultado == 33550336
 
 test_invierte_numero()
 test_convierte_binario()
